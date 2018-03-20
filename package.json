@@ -1,7 +1,7 @@
 {
   "name": "mcServer1803",
   "version": "1.0.0",
-  "description": "my minecraft server&#39;s infomation",
+  "description": "my minecraft server's infomation",
   "author": "Shota Kawashima",
   "private": true,
   "scripts": {
