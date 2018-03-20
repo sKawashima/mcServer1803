@@ -1,7 +1,7 @@
 <template lang='pug'>
 .nowAddress
   p#info {{message}}
-  p#address(data-clipboard-target="#address") {{Address}}
+  p#address(v-bind:data-clipboard-text='Address') {{Address}}
 </template>
 
 <script>
