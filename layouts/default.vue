@@ -6,9 +6,9 @@ div
       p top
     nuxt-link.item(@click='updateNav(1)' to='about')
       p about
-    .item(@click='updateNav(2)')
+    nuxt-link.item(@click='updateNav(2)' to='modlist')
       p mod list
-    .item(@click='updateNav(3)')
+    nuxt-link.item(@click='updateNav(3)' to='installation')
       p installation
 </template>
 
