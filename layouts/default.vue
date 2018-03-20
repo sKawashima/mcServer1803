@@ -21,7 +21,8 @@ div
   src: url('~/assets/URWDINCond-Light.ttf')
 
 html
-  font-family: "light","Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+  font-family: "light", YuGothic, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+  font-weight: 200
   font-size: 16px
   word-spacing: 1px
   -ms-text-size-adjust: 100%
@@ -38,6 +39,7 @@ html
   justify-content: center
   align-items: center
   text-align: left
+  flex-flow: column
 nav
   display: flex
   height: 10vh
@@ -59,4 +61,7 @@ nav
       border-top: 1vh solid lighten(#4e1a68, 70)
   .nuxt-link-exact-active
     border-top: 1vh solid lighten(#4e1a68, 50)
+h1
+  font-size: 3em
+  display: block
 </style>
