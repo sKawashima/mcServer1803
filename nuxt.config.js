@@ -1,4 +1,4 @@
-const pkg = require('./package')
+// const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
@@ -40,7 +40,7 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    // '@nuxtjs/axios'
   ],
 
   /*
