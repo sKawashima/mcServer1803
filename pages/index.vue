@@ -19,13 +19,6 @@ export default {
 </script>
 
 <style lang='sass' scoped>
-.container
-  min-height: 90vh
-  display: flex
-  justify-content: center
-  align-items: center
-  text-align: left
-
 .title
   font-family: 'bold'
   display: block

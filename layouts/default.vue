@@ -2,32 +2,15 @@
 div
   nuxt
   nav
-    .item.selected(@click='updateNav(0)')
+    nuxt-link.item.selected(@click='updateNav(0)' to='/')
       p top
-    .item(@click='updateNav(1)')
+    nuxt-link.item(@click='updateNav(1)' to='about')
       p about
     .item(@click='updateNav(2)')
       p mod list
     .item(@click='updateNav(3)')
       p installation
 </template>
-
-<script>
-export default {
-  methods: {
-    updateNav: function ( n ) {
-      console.log(n)
-      const navItems = document.getElementsByClassName('item')
-      for (let i = 0;i < navItems.length; i++) {
-        navItems[i].className='item'
-        if (i == n) {
-          navItems[i].className+=' selected'
-        }
-      }
-    }
-  }
-}
-</script>
 
 <style lang='sass'>
 @font-face
@@ -49,6 +32,12 @@ html
 *, *:before, *:after
   box-sizing: border-box
   margin: 0
+.container
+  min-height: 90vh
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: left
 nav
   display: flex
   height: 10vh
@@ -64,9 +53,10 @@ nav
     background-color: #000
     color: #fff
     transition: .3s
+    text-decoration: none
     border-top: 0 solid #000
     &:hover
       border-top: 1vh solid lighten(#4e1a68, 70)
-  .selected
+  .nuxt-link-exact-active
     border-top: 1vh solid lighten(#4e1a68, 50)
 </style>
