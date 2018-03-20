@@ -10,6 +10,7 @@ section.container
 
 <script>
 import now from '~/components/now.vue'
+
 export default {
   components:{
     now
@@ -19,7 +20,7 @@ export default {
 
 <style lang='sass' scoped>
 .container
-  min-height: 100vh
+  min-height: 90vh
   display: flex
   justify-content: center
   align-items: center
