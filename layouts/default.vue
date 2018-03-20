@@ -58,9 +58,9 @@ nav
     text-decoration: none
     border-top: 0 solid #000
     &:hover
-      border-top: 1vh solid lighten(#4e1a68, 70)
+      border-top: .5vh solid lighten(#4e1a68, 70)
   .nuxt-link-exact-active
-    border-top: 1vh solid lighten(#4e1a68, 50)
+    border-top: 1vh solid lighten(#4e1a68, 50) !important
 h1
   font-size: 3em
   display: block
