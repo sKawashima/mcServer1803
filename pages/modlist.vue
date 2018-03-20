@@ -46,7 +46,7 @@ ul
   grid-template-columns: 1fr 1fr 1fr 1fr
   grid-gap: 5px 1em
   padding: 0
-  margin-top: 15px
+  margin-top: 10px
   li
     list-style-type: none
 </style>
