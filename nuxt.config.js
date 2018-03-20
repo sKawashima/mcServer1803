@@ -15,7 +15,7 @@ module.exports = {
       { name: 'robots', content: 'noindex' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/mcServer1803/favicon.ico' }
     ]
   },
 
@@ -70,5 +70,6 @@ module.exports = {
       }
     }
   },
-  generate: { dir: 'docs' }
+  generate: { dir: 'docs' },
+  router: { base: '/mcServer1803/' }
 }
