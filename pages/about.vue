@@ -18,4 +18,5 @@ export default {
 <style lang='sass' scoped>
   p
     max-width: 750px
+    line-height: 1.7em
 </style>
