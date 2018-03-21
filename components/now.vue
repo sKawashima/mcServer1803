@@ -1,7 +1,7 @@
 <template lang='pug'>
 .nowAddress
   p#info {{message}}
-  p#address(v-bind:data-clipboard-text='Address + port') {{Address + port}}
+  p#address(v-bind:data-clipboard-text='Address + ":" + port') {{Address + ":" + port}}
 </template>
 
 <script>
@@ -10,7 +10,7 @@ import clipboard from 'clipboard'
 export default {
   data() {
     return {
-      Address: '0.tcp.ngrok.io:',
+      Address: '0.tcp.ngrok.io',
       port: '15836',
       message: 'please click to copy:'
     }
