@@ -44,6 +44,7 @@ html
   align-items: center
   text-align: left
   flex-flow: column
+  padding: 50px
 nav
   display: flex
   height: 10vh
