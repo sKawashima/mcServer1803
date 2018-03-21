@@ -4,11 +4,11 @@ div
   nav
     nuxt-link.item.selected(@click='updateNav(0)' to='/')
       p top
-    nuxt-link.item(@click='updateNav(1)' to='about')
+    nuxt-link.item(@click='updateNav(1)' to='/about')
       p about
-    nuxt-link.item(@click='updateNav(2)' to='modlist')
+    nuxt-link.item(@click='updateNav(2)' to='/modlist')
       p mod list
-    nuxt-link.item(@click='updateNav(3)' to='installation')
+    nuxt-link.item(@click='updateNav(3)' to='/installation')
       p installation
 </template>
 
