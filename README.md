@@ -1,6 +1,7 @@
 # mcServer1803
 
-> my minecraft server&#39;s infomation
+> my minecraft server's infomation
+https://skawashima.github.io/mcServer1803/
 
 ## Build Setup
 
