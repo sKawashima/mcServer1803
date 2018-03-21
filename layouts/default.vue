@@ -19,9 +19,13 @@ div
 @font-face
   font-family: 'light'
   src: url('~/assets/URWDINCond-Light.ttf')
+@font-face
+  font-family: 'japanSans'
+  src: url('~/assets/JapanSans70.woff')
+  src: url('~/assets/JapanSans70.otf')
 
 html
-  font-family: "light", YuGothic, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+  font-family: 'light', 'japanSans', "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
   font-weight: 200
   font-size: 16px
   word-spacing: 1px
