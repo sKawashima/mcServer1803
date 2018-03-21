@@ -72,5 +72,5 @@ module.exports = {
     }
   },
   generate: { dir: 'docs' },
-  router: { base: '/mcServer1803/' }
+  router: { base: '/mcServer1803' }
 }
