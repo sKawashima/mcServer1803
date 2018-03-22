@@ -1,6 +1,6 @@
 <template lang='pug'>
 div
-  p#beforeAxios getting server status...
+  p#beforeAxios {{status}}
   p#afterAxios.d-n now playing {{online}}/{{max}}. {{players}}
 </template>
 
