@@ -1,7 +1,11 @@
 # mcServer1803
+my minecraft server's infomation
 
-> my minecraft server's infomation
 https://skawashima.github.io/mcServer1803/
+
+## Update History
+- 180322 非同期通信を用いたサーバー情報の表示を追加
+- 180321 公開
 
 ## Build Setup
 
