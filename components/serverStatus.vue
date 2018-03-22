@@ -28,11 +28,10 @@ export default {
       this.online = res.data.players.online
       if (this.online != 0) {
         this.players += 'member: '
-        this.players += res.data.players.sample[0].name
-        for (let i = 1;i < res.data.players.sample.length; i++){
-          this.players += ', '
+        res.data.players.sample.forEach((obj, i) => {
+          if(i != 0) this.players += ', '
           this.players += res.data.players.sample[i].name
-        }
+        })
       }
       document.getElementById('afterAxios').className = ''
       document.getElementById('beforeAxios').className = 'd-n'
