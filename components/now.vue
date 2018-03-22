@@ -2,10 +2,12 @@
 .nowAddress
   p#info {{message}}
   p#address(v-bind:data-clipboard-text='Address + ":" + port') {{Address + ":" + port}}
+  serverStatus
 </template>
 
 <script>
 import clipboard from 'clipboard'
+import serverStatus from '~/components/serverStatus.vue'
 
 export default {
   data() {
@@ -21,6 +23,9 @@ export default {
     	this.message = 'copied!'
       setTimeout(() => {this.message = 'please click to copy:'}, 2000)
     })
+  },
+  components: {
+    serverStatus
   }
 }
 </script>
