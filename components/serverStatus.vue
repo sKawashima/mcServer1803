@@ -11,6 +11,7 @@ export default {
   // props: ['address', 'port'],
   data () {
     return {
+      status: 'getting server status...',
       max: 0,
       online: 0,
       players: ''
@@ -19,6 +20,9 @@ export default {
   mounted () {
     axios.get('https://api.minetools.eu/ping/0.tcp.ngrok.io/15836')
     .then((res) => {
+      if (res.data.players.max == 0) {
+        this.status= 'API Call Error...(AdBlock?)'
+      }
       this.max = res.data.players.max
       this.online = res.data.players.online
       if (this.online != 0) {
