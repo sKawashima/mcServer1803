@@ -1,7 +1,7 @@
 <template lang='pug'>
 div
   p#beforeAxios {{status}}
-  p#afterAxios.d-n now playing {{online}}/{{max}}. {{players}}
+  p#afterAxios now playing {{online}}/{{max}}. {{players}}
 </template>
 
 <script>
@@ -18,6 +18,7 @@ export default {
     }
   },
   mounted () {
+    document.getElementById('afterAxios').className = 'd-n'
     axios.get('https://api.minetools.eu/ping/0.tcp.ngrok.io/15836')
     .then((res) => {
       if (res.data.players.max == 0) {
@@ -33,13 +34,13 @@ export default {
           this.players += res.data.players.sample[i].name
         }
       }
-      document.getElementById('afterAxios').classList.remove('d-n')
-      document.getElementById('beforeAxios').classList.add('d-n')
+      document.getElementById('afterAxios').className = ''
+      document.getElementById('beforeAxios').className = 'd-n'
     })
     .catch((e) => {
       this.status　= 'Server is closing now...'
-      document.getElementById('afterAxios').classList.remove('d-n')
-      document.getElementById('beforeAxios').classList.add('d-n')
+      document.getElementById('afterAxios').className = ''
+      document.getElementById('beforeAxios').className = 'd-n'
     })
   }
 }
