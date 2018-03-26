@@ -19,7 +19,7 @@ export default {
   },
   mounted () {
     document.getElementById('afterAxios').className = 'd-n'
-    axios.get('https://api.minetools.eu/ping/0.tcp.ngrok.io/15836')
+    axios.get('https://api.minetools.eu/ping/0.tcp.ngrok.io/18779')
     .then((res) => {
       if (res.data.players.max == 0) {
         this.status= 'API Call Error...(AdBlock?)'

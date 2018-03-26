@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       Address: '0.tcp.ngrok.io',
-      port: '15836',
+      port: '18779',
       message: 'please click to copy:'
     }
   },
